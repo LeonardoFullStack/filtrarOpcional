@@ -1,0 +1,81 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: black;
+    height: 100px;
+    text-align: center;
+    padding:50px;
+    color: white;
+    border: solid black;
+}
+
+#botones {
+text-align: center;
+height: 200px;
+}
+
+#container {
+    display:grid;
+    grid-template-columns: 1fr;
+    height: 300px;
+    gap: 10px;
+    
+}
+
+img {
+    width: 370px;
+    height: 250px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+article {
+    margin: 0 auto;
+}
+
+#presentar {
+    display:grid;
+}
+
+.viaje1, .viaje2, .viaje3, .viaje4, .viaje5, .viaje6, .viaje7 {
+    width: 530px;
+    height: 371px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:768px) {
+
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    article {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+
+    #container {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+}
